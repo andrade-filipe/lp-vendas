@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;0,800;1,200;1,400;1,600;1,700&family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="typo-body">
+    
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+              <a class="navbar-brand | typo-h4" href="#">Minha Loja</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#features">Recursos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#products">Produtos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#pricing">Preços</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#contact">Contato</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+
+  <section id="hero" class="hero">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <h1 class="hero__title | typo-h1">Bem-vindo à Minha Loja</h1>
+                  <p class="hero__subtitle">Encontre os melhores produtos para você</p>
+                  <a href="#contact" class="btn">Entre em contato</a>
+              </div>
+            </div>
+        </div>
+  </section>
+
+  <section id="features" class="features">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="features__item">
+                      <i class="bi bi-shield-check features__icon"></i>
+                      <h3 class="features__title | typo-h3">Produtos de Qualidade</h3>
+                      <p class="features__description">Nossos produtos são <span class="highlight-text">cuidadosamente selecionados</span> e passam por rigorosos testes de qualidade.</p>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="features__item">
+                      <i class="bi bi-truck features__icon"></i>
+                      <h3 class="features__title | typo-h3">Entrega Rápida</h3>
+                      <p class="features__description">Realizamos entregas rápidas e seguras para que você receba seus produtos no <span class="highlight-text">menor prazo possível.</span></p>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="features__item">
+                      <i class="bi bi-credit-card features__icon"></i>
+                      <h3 class="features__title | typo-h3">Pagamento Facilitado</h3>
+                      <p class="features__description">Oferecemos <span class="highlight-text">diversas opções de pagamento</span> para que você possa escolher a mais conveniente para você.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="products" class="products">
+      <div class="container">
+          <h2 class="section-title | typo-h2">Nossos Produtos</h2>
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="products__item">
+                      <img src="img/iphone-14-pro2.jpg" width="1000" height="1000" alt="Product 1" class="products__image">
+                      <h4 class="products__title | typo-h4">Iphone 14 Pro</h4>
+                      <p class="products__description">Quad Core, 4GB de RAM, 16MP, OLED.</p>
+                      <p class="products__price">R$ 9.999,99</p>
+                      <a href="#" class="btn btn--buy">Comprar</a>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="products__item">
+                      <img src="img/galaxy-a54-5g.jpg" width="1000" height="1000" alt="Product 2" class="products__image">
+                      <h4 class="products__title | typo-h4">Galaxy A54</h4>
+                      <p class="products__description">Quad Core, 4GB de RAM, 16MP, OLED</p>
+                      <p class="products__price">R$ 9.999,99</p>
+                      <a href="#" class="btn btn--buy">Comprar</a>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="products__item">
+                      <img src="img/xiaomi-mi-11-ultra.jpg" width="1000" height="1000" alt="Product 3" class="products__image">
+                      <h4 class="products__title | typo-h4">Xiaomi Mi 11 Utra</h4>
+                      <p class="products__description">Quad Core, 4GB de RAM, 16MP, OLED.</p>
+                      <p class="products__price">R$ 9.999,99</p>
+                      <a href="#" class="btn btn--buy">Comprar</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+      <div class="container">
+          <h2 class="section-title | typo-h2">Planos e Preços</h2>
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="pricing__item same-height-plans">
+                      <h4 class="pricing__title | typo-h4">Plano Básico</h4>
+                      <p class="pricing__price">R$9.99/mês</p>
+                      <ul role='list' class="pricing__features">
+                          <li>Ligação</li>
+                          <li>SMS</li>
+                          <li>Internet</li>
+                      </ul>
+                        <a href="#" class="btn btn--buy">Comprar</a>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="pricing__item same-height-plans">
+                      <h4 class="pricing__title | typo-h4">Plano Padrão</h4>
+                      <p class="pricing__price">R$19.99/mês</p>
+                      <ul role='list' class="pricing__features">
+                        <li>Ligação</li>
+                        <li>SMS</li>
+                        <li>Internet</li>
+                        <li>Netflix</li>
+                      </ul>
+                      <a href="#" class="btn btn--buy">Comprar</a>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="pricing__item same-height-plans">
+                      <h4 class="pricing__title | typo-h4">Plano Avançado</h4>
+                      <p class="pricing__price">R$29.99/mês</p>
+                      <ul role='list' class="pricing__features">
+                        <li>Ligação</li>
+                        <li>SMS</li>
+                        <li>Internet</li>
+                        <li>Netflix</li>
+                        <li>Celular novo + fácil</li>
+                      </ul>
+                      <a href="#" class="btn btn--buy">Comprar</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="contact" class="contact">
+      <div class="container">
+          <h2 class="section-title | typo-h2">Entre em Contato</h2>
+          <p class="contact__description">Entre em contato conosco para mais informações ou dúvidas sobre nossos produtos.</p>
+          <form class="contact__form">
+              <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Seu nome">
+              </div>
+              <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Seu e-mail">
+              </div>
+              <div class="form-group">
+                  <textarea class="form-control" rows="5" placeholder="Sua mensagem"></textarea>
+              </div>
+              <button type="submit" class="btn">Enviar</button>
+          </form>
+      </div>
+  </section>
+
+  <footer class="footer">
+      <div class="container text-center">
+          <p>Todos os direitos reservados &copy; 2023 Minha Loja</p>
+          <p>Site criado por <a href="#">Filipe Andrade</a></p>
+      </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
