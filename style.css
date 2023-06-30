@@ -281,7 +281,42 @@ PRODUTOS
 
 .products__price {
     font-weight: var(--fw-semi-bold);
-    margin-bottom: var(--sz-700);
+    margin-bottom: 0;
+}
+
+.produto--desconto::after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    padding: 0 10px;
+
+    background-color: var(--clr-dark);
+    color: var(--clr-accent);
+
+    font-size: var(--fs-small);
+    font-weight: var(--fw-semi-bold);
+    line-height: 2.5;
+
+    border-radius: var(--sz-600);
+
+    content: "-20%";
+}
+
+.produto--desconto .products__price {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.produto--desconto .products__new-price::after {
+    content: "R$ 7.999,00";
+    background-color: var(--clr-dark);
+    color: var(--clr-accent);
+
+    padding: 0 1rem;
+    border-radius: var(--sz-600);
+    
+    font-weight: var(--fw-semi-bold);
 }
 
 @media (min-width: 1200px) {
