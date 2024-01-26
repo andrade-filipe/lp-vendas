@@ -1,0 +1,1 @@
+https://lpvendas.netlify.app
