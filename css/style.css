@@ -245,10 +245,6 @@ BUTTON
 FEATURES
 ------------------*/
 
-.features{
-    padding-top: var(--spacing-section-features);
-}
-
 .features__item {
     margin-bottom: var(--sz-500);
 }
@@ -257,12 +253,15 @@ FEATURES
     text-align: justify;
 }
 
+@media (min-width: 992px){
+    .features{
+        padding-top: var(--spacing-section-features);
+    }
+}
+
 /*-----------------
 PRODUTOS
 ------------------*/
-.products{
-    padding-top: var(--spacing-section);
-}
 
 .section-title {
     border: 3px solid var(--clr-dark);
@@ -340,12 +339,15 @@ PRODUTOS
     }
 }
 
+@media (min-width: 992px){
+    .products{
+        padding-top: var(--spacing-section);
+    }
+}
+
 /*-----------------
 PLANOS E PREÇOS
 ------------------*/
-.pricing{
-    padding-top: var(--spacing-section);
-}
 
 .pricing__item {
     text-align: center;
@@ -368,6 +370,11 @@ PLANOS E PREÇOS
     transition: 0.3s;
 }
 
+@media (min-width: 992px){
+    .pricing{
+        padding-top: var(--spacing-section);
+    }
+}
 /*-----------------
 CONTATO
 ------------------*/
