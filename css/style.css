@@ -81,11 +81,18 @@ black: #000;
     --img-biggerscreen: 20vmax;
     --img-medium-screen: 24vmax;
     --img-mobile: 28vmax;
+
+    /*SPACING*/
+    --spacing-section: 3rem;
+    --spacing-section-features: 7.5rem;
 }
 
 /*-----------------
 GENERAL STYLES
 ------------------*/
+::-webkit-scrollbar {
+    display: none;
+    } 
 
 @media (min-width: 992px) {
     :root {
@@ -99,6 +106,10 @@ GENERAL STYLES
 /*-----------------
 HEADER
 ------------------*/
+
+.header {
+    padding-top: 0.1rem;
+}
 
 .navbar {
     background-color: var(--clr-primary);
@@ -156,6 +167,7 @@ HEADER
 @media (max-width: 992px) {
     .navbar {
         text-align: center;
+        border-radius: 1.6rem;
     }
 
     .navbar .container {
@@ -180,11 +192,10 @@ HERO
 ------------------*/
 
 .hero {
-    background-image: url("img/hero.png");
+    background-image: url("../img/hero.png");
     background-repeat: no-repeat;
     background-position-y: 30%;
     padding: 8rem 0;
-    margin-bottom: var(--standard-margin);
 }
 
 
@@ -234,8 +245,8 @@ BUTTON
 FEATURES
 ------------------*/
 
-.features {
-    margin-bottom: var(--standard-margin);
+.features{
+    padding-top: var(--spacing-section-features);
 }
 
 .features__item {
@@ -249,6 +260,10 @@ FEATURES
 /*-----------------
 PRODUTOS
 ------------------*/
+.products{
+    padding-top: var(--spacing-section);
+}
+
 .section-title {
     border: 3px solid var(--clr-dark);
     border-radius: var(--sz-800);
@@ -328,6 +343,10 @@ PRODUTOS
 /*-----------------
 PLANOS E PREÇOS
 ------------------*/
+.pricing{
+    padding-top: var(--spacing-section);
+}
+
 .pricing__item {
     text-align: center;
     border-radius: var(--sz-400);
